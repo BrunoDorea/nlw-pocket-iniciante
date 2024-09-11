@@ -15,10 +15,8 @@ const salvarMetas = async () => {
     await fs.writeFile("metas.json", JSON.stringify(metas, null, 2))
 }
 
-// Função para acessar a lista de metas
 const getMetas = () => metas
 
-// Função para atualizar a lista de metas
 const setMetas = (novasMetas) => {
     metas = novasMetas
 }

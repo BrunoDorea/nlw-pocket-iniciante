@@ -1,4 +1,3 @@
-// main.js
 const { select } = require('@inquirer/prompts')
 const { carregarMetas, salvarMetas } = require('./components/storage')
 const { cadastrarMeta, listarMetas, metasRealizadas, metasAbertas, deletarMetas } = require('./components/metas')
