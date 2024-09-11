@@ -31,6 +31,11 @@ const cadastrarMeta = async () => {
 }
 
 const listarMetas = async () => {
+    if (metas.length == 0) { 
+        mensagem = "Não existe metas cadastradas."
+        return 
+    }
+
     const respostas = await checkbox({
         message: "Utilize as [setas] para alternar de metas, o [espaço] para marcar/desmarcar e [enter] para finalizar.",
         choices: [...metas],
@@ -89,6 +94,11 @@ const metasAbertas = async () => {
 }
 
 const deletarMetas = async () => {
+    if (metas.length == 0) { 
+        mensagem = "Não existe meta(s) para deletar."
+        return 
+    }
+
     const metasDesmarcadas = metas.map((meta) => {
         return {
             value: meta.value, checked: false
@@ -102,7 +112,7 @@ const deletarMetas = async () => {
     })
 
     if (!itemsADeletar) {
-        mensagem = "Nenhum item para deletar."
+        mensagem = "Nenhuma meta para deletar."
     }
 
     itemsADeletar.forEach((item) => {
