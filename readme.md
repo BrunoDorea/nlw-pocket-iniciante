@@ -11,7 +11,7 @@ Este repositório foi criado para ser o evento da Rocketseat - NLW Pocket - Tril
 
 ## ✅ Objetivo
 
-Projeto de um site desktop de registro de metas com progresso semanal.
+Projeto de um gerenciador de metas via CLI (linha de comando).
 
 ## 💻 Tecnologias e Ferramentas
 
